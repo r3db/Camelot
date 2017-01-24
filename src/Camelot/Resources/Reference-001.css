@@ -1,0 +1,46 @@
+aaa[data-mode1='boxes1'] .tabs-box .tab + h2:before1 {}
+.tabs-box[data-mode2|=boxes2] .tab     h3:before2 {}
+a#b.tabs-box[data-mode3~=boxes3]::after       .tab h4:before3 [a=b] {}
+b[l1] {}
+[l2] {}
+a#b.tabs-box[data-mode3~=boxes3]::after  >     .tab >h4:before3~[a=b] x{}
+
+/**
+Some Comment
+  **/
+
+           .a.b.c.d.e.f:before + .x.y.z:after {
+    display: none;
+}
+
+a#tag {}
+
+.div     .hr .html      {
+	display: none;
+}
+
+.w.b.c.d.e.f:beforeW > .k.y.z:after ~ .k:afteryou .diva      .divb  .divc{
+    display: none
+}
+
+div.a.b.c.d.e.f:pseudo {
+    left : 0 px;
+}
+
+hr1.a.b:before hr2.x.y:after {
+    background-image: url(http://h.s.sl.pt/v2011/imgs/2011/png/sprite_expandable_arrow.png);
+}
+
+f.oldie g.time_track1:before, h.oldie i.time_track2:after {
+    display:none;
+}
+
+a.oldie .time_track3:before,
+b.oldie .time_track4:after {
+    display:none;
+}
+
+.no-svg .destaques [data-mode="boxes"] .tabs-box .tab h2:before, 
+.no-svg .destaques .tabs-box h1 {
+	background-image: url("http://h.s.sl.pt/v2011/imgs/2011/png/tags_destaque.png")
+}

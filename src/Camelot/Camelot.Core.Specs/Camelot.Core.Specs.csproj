@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{58200645-8CA1-4452-B1F3-2F5C3EA8554A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Camelot</RootNamespace>
+    <AssemblyName>Camelot.Core.Specs</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <CodeAnalysisRuleSet>..\..\Solution\Camelot.Specs.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Axiomatic.Core">
+      <HintPath>..\..\..\Dreamscape\Source\Epiphany\Epiphany.Core\bin\Debug\Axiomatic.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Epiphany.Core">
+      <HintPath>..\..\..\Dreamscape\Source\Epiphany\Epiphany.Core\bin\Debug\Epiphany.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Epiphany.Extensions">
+      <HintPath>..\..\..\Dreamscape\Source\Epiphany\Epiphany.Core\bin\Debug\Epiphany.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\Binaries\NUnit\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Project\AssemblyInfo.Specs.cs">
+      <Link>Properties\AssemblyInfo.Specs.cs</Link>
+    </Compile>
+    <Compile Include="Builders\CssElementBuilder.cs" />
+    <Compile Include="Builders\CssSelectorComponentBuilder.cs" />
+    <Compile Include="Builders\HtmlElementBuilder.cs" />
+    <Compile Include="Helpers\CssSelectorExtensions.cs" />
+    <Compile Include="Helpers\HtmlElementExtensions.cs" />
+    <Compile Include="HtmlParser\CssParserSpecs.cs" />
+    <Compile Include="HtmlParser\HtmlParserSpecs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Key.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Camelot.Core\Camelot.Core.csproj">
+      <Project>{B7ECF0D4-6FB6-43BB-84C7-E91ACCFE210D}</Project>
+      <Name>Camelot.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

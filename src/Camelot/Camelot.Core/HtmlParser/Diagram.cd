@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Camelot.BaseParser">
+    <Position X="5.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HtmlParser\BaseParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Camelot.HtmlAttributeParser">
+    <Position X="3" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>IAAgAAAAAAAAAAAAAAAAAAIAAAAAAAAAIACAAAIAAAE=</HashCode>
+      <FileName>HtmlParser\HtmlAttributeParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Camelot.HtmlElementParser">
+    <Position X="7.5" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAABAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>HtmlParser\HtmlElementParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Camelot.HtmlParser">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAAkAAIAAAAAAAARAAAgEAAQIAAAAEAABAAAAAAEQAI=</HashCode>
+      <FileName>HtmlParser\HtmlParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Camelot.HtmlTagNameParser">
+    <Position X="5.25" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAgAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HtmlParser\HtmlTagNameParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
